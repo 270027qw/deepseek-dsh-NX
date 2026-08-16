@@ -1,6 +1,7 @@
 # NX Copilot — 基于 NX 2606 的 Design Copilot 替代方案（DeepSeek Harness 为 AI 终端）
 
-用自然语言驱动西门子 NX 2606 完成建模任务的 AI 副驾驶（Copilot）替代方案。以 **DeepSeek Harness (DSH)** 作为 AI 终端（对话、DeepSeek 大模型、工具调用），通过 **NXOpen 桥接服务**与 NX 2606 会话通信：理解设计意图 → 查询模型 → 创建特征 → 生成并执行 NXOpen journal 代码。
+驱动西门子 NX 2606 完成建模任务的 AI 方案。以 **DeepSeek Harness (DSH)** 为终端 ，通过 **NXOpen 桥接服务**与 NX 2606 会话通信。
+本代码含大量AI编写 ，如有问题请联系作者或修改
 
 ---
 
