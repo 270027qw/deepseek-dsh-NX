@@ -24,7 +24,7 @@
 
 ## 快速开始
 
-### 2) 部署到 NX 2606
+### 部署到 NX 2606
 
 1.`nx-bridge/journals/NXBridgeServer.cs` 到 NX 机器。
 2. 打开文件修改顶部常量：`PORT`（默认 8123）、`TOKEN`（**必须设置**，为空则拒绝所有请求）、`PREFIX_HOST`。
@@ -43,21 +43,20 @@
 ├── .gitignore
 ├── docs/
 │   ├── architecture.md          # 架构、模块职责、数据流、安全模型
-│   ├── protocol.md              # JSON-RPC 2.0 协议规范（方法全表 + 示例）
-│   ├── copilot-features.md      # Design Copilot 能力拆解 → 本方案对照与差距
-│   └── nx-open-notes.md         # NXOpen 要点与 journal 代码生成准则（给大模型用）
+│   ├── protocol.md              # JSON-RPC 2.0 协议规范
+│   ├── copilot-features.md      # Design Copilot
+│   └── nx-open-notes.md         # NXOpen 要点与 journal 代码生成准则
 ├── nx-bridge/
 │   ├── README.md                # NX 侧部署/配置/故障排查
 │   └── journals/
-│       └── NXBridgeServer.cs    # 单文件 NXOpen journal（核心交付物）
+│       └── NXBridgeServer.cs    # 单文件 NXOpen journal
 ├── mock-bridge/
-│   └── server.mjs               # Node 模拟桥（同协议）
+│   └── server.mjs               # Node 模拟桥
 ├── dsh-plugin/
 │   ├── host.js                  # Cordis 插件 Host 半部分（工具集）
 │   ├── client.js                # Cordis 插件 Client 半部分（状态面板）
-│   └── README.md                # 插件安装/使用说明
 ├── examples/
-│   └── journals/                # 示例：模型生成的 journal 长什么样
+│   └── journals/                # 示例
 └── scripts/
-    └── smoke.mjs                # 协议冒烟测试（对任意 bridge 运行）
+    └── smoke.mjs                # 协议测试
 ```
