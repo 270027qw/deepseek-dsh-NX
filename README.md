@@ -23,18 +23,7 @@
 
 
 ## 快速开始
-
-### 部署到 NX 2606
-
-1.`nx-bridge/journals/NXBridgeServer.cs` 到 NX 机器。
-2. 打开文件修改顶部常量：`PORT`（默认 8123）、`TOKEN`（**必须设置**，为空则拒绝所有请求）、`PREFIX_HOST`。
-3. NX 中执行：**File → Execute → NX Open…**，选择 `NXBridgeServer.cs`。看到弹窗「NX Copilot 桥接服务已启动」即成功。
-4. （可选）非管理员运行 NX 时若启动失败提示权限，执行一次：
-   ```powershell
-   netsh http add urlacl url=http://+:8123/ user=Everyone
-   ```
-   并在 Windows 防火墙放行 8123 端口（仅限可信局域网）。
-5. 回到 DSH，对话中输入连接命令（IP 为 NX 机器地址）
+Harmess中创建新对话将仓库链接提交至对话框
 
 ## 仓库结构
 ```
